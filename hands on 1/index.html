@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<style>
+
+
+    body{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-image: url(bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center; 
+    }
+    #Btn1, #Btn2, #Btn3 {
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px;
+        margin-top: 30%;
+        margin-right: 30px;
+    }
+    #Btn1{
+        background-color: #89ABE3;
+        margin-top: 20%;
+    }
+    #Btn2{
+        background-color: #EA738D;
+        margin-top: 20%;
+    }
+    #Btn3{    
+        background-color: #6883BC;
+        margin-top: 20%;  
+    }
+</style>
+<body>
+    <button id="Btn1">Button 1</button>
+    <button id="Btn2">Button 2</button>
+    <button id="Btn3">Button 3</button>
+
+    <script>
+        window.onload = function () {
+            let btn1 = document.getElementById('Btn1');
+            let btn2 = document.getElementById('Btn2');
+            let btn3 = document.getElementById('Btn3');
+
+            btn1.addEventListener('click', btn1Function);
+            btn2.addEventListener('click', btn2Function);
+            btn3.addEventListener('click', btn3Function);
+
+            function btn1Function() {
+                window.alert("Button 1 has been clicked");
+            }
+
+            function btn2Function() {
+                window.alert("Button 2 has been clicked");
+            }
+
+            function btn3Function() {
+                window.alert("Button 3 has been clicked");
+            }
+        };
+    </script>
+</body>
+</html>
